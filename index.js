@@ -15,3 +15,17 @@ var pbj = {
     console.log("here's your " + this.name + ", enjoy!");
   }
 }
+
+function Sandwich(bread, ingredients, cut) {
+  this.bread = bread;
+  this.ingredients = ingredients;
+  this.cut = cut;
+  this.serve = function() {
+    console.log("here's your " + this.name + ", enjoy!");
+  }
+}
+ 
+var blt = new Sandwich("white", ["bacon","lettuce","tomato","mayo"],"rectangle");
+// add name to the blt before serving
+blt.name = "BLT";
+
